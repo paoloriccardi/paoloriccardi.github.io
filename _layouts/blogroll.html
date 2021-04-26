@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{{ content }}
+
+
+{% for post in site.posts %}
+<div class="row" style="margin-top: 1%;">
+    <h5>>> {{ post.title}}</h5>
+         
+
+    <p>
+        Published in: 
+        {% for category in post.categories %}
+            [{{category}}]
+        {% endfor %}
+        <span class="postDate"> - <i>{{ post.date | date: "%b %-d, %Y" }}</i></span>
+    </p>
+
+    <p>
+        {{ post.description }}
+        <a href="{{ post.url }}">Read More</a>
+    </p>
+<hr>
+</div>
+
+{% endfor %}
+
+

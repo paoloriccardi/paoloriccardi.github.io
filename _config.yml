@@ -1,0 +1,14 @@
+name: Bloggingchrome
+title: Bloggingchrome
+author: Paolo Riccardi
+description: Blog about computer science 
+lang: en
+#url: http://paoloriccardi.github.io
+url: https://www.bloggingchrome.it
+baseurl: ""
+
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge

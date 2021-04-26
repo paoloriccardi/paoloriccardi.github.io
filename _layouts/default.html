@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{page.title}} | {{site.title}}</title>
+        <meta name="description" content="">
+        <meta name="author" content="Paolo Riccardi">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{{ site.baseurl }}{% link /css/normalize.css %}">
+        <link rel="stylesheet" href="{{ site.baseurl }}{% link /css/skeleton.css %}">
+
+        <link rel="icon" type="image/png" href="/images/favicon.png" >
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row" style="margin-top: 1%">
+                <div class="two columns">
+                    <img class="img-circle" src="/images/avat.jpg" alt="avatar">
+                </div>
+                <div class="ten columns" style="margin-top: 2%; margin-bottom:10%">
+                    <ul id="menu">
+                        {% for link in site.data.navigation %}
+                        <li><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class = "column">
+                {{content}}
+            </div>
+        </div>
+    
+
+        <div class="row" >
+            <div style="margin-top: 10%; margin-bottom:5%">
+              <hr>
+              <div class="column" style=text-align:right>&copy; Paolo Riccardi 2019 </div>
+            </div>
+          </div>
+
+        </div>
+    </body>
+</html>
