@@ -32,7 +32,7 @@ To sum up some of the pros:
 Since I never had any contact with Jekyll before I had to start from the very beginning: what's Jekyll? Do I need to know Ruby to use it? How do I deploy a simple website and so on?
 The official documentation is a good starting point, it comes with some useful [tutorial](https://jekyllrb.com/tutorials/convert-site-to-jekyll/){:target="_blank"}.
 
-Theoretically you could just write your website according to jekyll standards and push it straight to github for publications, however to make things easier you should install jekyll (and Ruby) and use the command line to build the website, test locally and then eventually push it on GitHub, [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) is a good tutorial for doing this the clean way.
+Theoretically you could just write your website according to jekyll standards and push it straight to github for publications, however to make things easier you should install jekyll (and Ruby) and use the command line to build the website, test locally and then eventually push it on GitHub, [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll){:target="_blank"} is a good tutorial for doing this the clean way.
 
 Some tips I collected along the way:
 1. Writing a page is just as simple as writing a `markdown` file, you may want to specify in the `_config.yml` file your favourite md processor, highlighter and so on... 
