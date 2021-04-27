@@ -43,6 +43,7 @@ Some tips I collected along the way:
         do_something
     endfor
     ```
+    - Another one is `_site` where jekyll is going to put the generated html you will deploy, you can just put this directory into `.gitignore` if you're going to publish on GitHub Pages and forget about it 
 3. Get familiar with the `Front Matter` (a sort of yml prefix included in pages and posts) it may save your day
 4. The layouts allow you to concentrate on writing contents rather than tags, they can be composed effectively with inheritance and are basically html files with some space for contents, that can be enriched with some templating magic (f.e. loops, which are useful when you want to display your blogroll)
 5. It is possible to use your own domain instead of `<username>.github.io` it took some minute for the DNS to propagate but it worked like a charm, following this [tutorial](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages){:target="_blank"} 
