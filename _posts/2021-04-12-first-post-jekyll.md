@@ -35,15 +35,15 @@ The official documentation is a good starting point, it comes with some useful [
 Theoretically you could just write your website according to jekyll standards and push it straight to github for publications, however to make things easier you should install jekyll (and Ruby) and use the command line to build the website, test locally and then eventually push it on GitHub, [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll){:target="_blank"} is a good tutorial for doing this the clean way.
 
 Some tips I collected along the way:
-1. Writing a page is just as simple as writing a `markdown` file, you may want to specify in the `_config.yml` file your favourite md processor, highlighter and so on... 
-2. For your own sanity, starting with a good [file structure](https://jekyllrb.com/docs/structure/){:target="_blank"} helps, a lot, since Jekyll will depend on them
+1. One you've built the basic layout structure, writing a pages and posts is just as simple as writing a `markdown` file, you just may want to specify in the `_config.yml` file your favourite md processor, highlighter and so on... 
+2. For your own sanity, starting with a good [file structure](https://jekyllrb.com/docs/structure/){:target="_blank"} helps, a lot, since Jekyll will depend on it
     - One of those *magic* directory is `_data` where you can store `.yml` files for various purposes (f.e. defining the navigation menu) and retrieve them with something like this:
     ```
     for link in site.data.navigation 
         do_something
     endfor
     ```
-3. Get familiar with the `Front Matter` (a sort of yaml prefix included in pages and posts) it may save your day
+3. Get familiar with the `Front Matter` (a sort of yml prefix included in pages and posts) it may save your day
 4. The layouts allow you to concentrate on writing contents rather than tags, they can be composed effectively with inheritance and are basically html files with some space for contents, that can be enriched with some templating magic (f.e. loops, which are useful when you want to display your blogroll)
 5. It is possible to use your own domain instead of `<username>.github.io` it took some minute for the DNS to propagate but it worked like a charm, following this [tutorial](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages){:target="_blank"} 
 
