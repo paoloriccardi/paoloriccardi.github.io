@@ -3,7 +3,7 @@ title: Who am I
 layout: default
 permalink: /Whoami/
 ---
-## {{page.title}}
+### {{page.title}}
 
 I'm Paolo Riccardi, Computer Science enthusiast.
 I live in Florence (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect.

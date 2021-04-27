@@ -4,10 +4,10 @@ layout: default
 permalink: /
 ---
 
-## {{page.title}}
+### {{page.title}}
 
-##### Hi,
-This is my online resume, here you will find information about my [Professional](/Professional/) career as well as a glance on what I'm doing in my spare time about computer science related topics, readings, reviews, pet projects etc...
+
+This is my online resume, here you will find basic information about my [professional career](/Resume/) as well as a glance on what I'm doing in my spare time about computer science related topics, readings, reviews, pet projects etc...
 
 I've realized that the process to translate a new concept to others is very helpful in consolidating my own understanding of that concept, so I'm trying to include this translation process into my study routine. 
 Hopefully I'll be able to put some of those things as posts in the [Linenoise](/Linenoise/) section. 

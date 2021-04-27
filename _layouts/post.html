@@ -5,11 +5,14 @@ layout: default
 <h4>{{ page.title }}</h4>
 <div class="column" style=text-align:right>
 <p>
-    <i>{{ page.date | date_to_string }} </i>
-    , 
-    {% for category in page.categories %}
-        <i>[{{category}}]</i>
-    {% endfor %}
+    <span style="font-family: 'Roboto', monospace;">
+        >>
+        {{ page.date | date_to_string }} 
+        - 
+        {% for category in page.categories %}
+            [{{category}}]
+        {% endfor %}
+    </span>
 </p>
 </div>
 <div class="column">

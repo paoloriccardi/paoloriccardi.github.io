@@ -1,9 +1,9 @@
 ---
-title: Professional
+title: Resume
 layout: default
-permalink: /Professional/
+permalink: /Resume/
 ---
-## {{page.title}}
+### {{page.title}}
 
 ##### What can I do for you?
 I've a 10+ years experience in software and IT, my favourite topic is always been distributed systems, with particular emphasis on backend services and integration components.

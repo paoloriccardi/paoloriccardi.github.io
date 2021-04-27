@@ -3,7 +3,7 @@ title: How I did it, from mr. Html to dr. Jekyll
 layout: post
 categories: Dev 
 permalink: /Linenoise/:categories/:title/
-description: The brief history of how and why I migrated my old html resume to GitHub pages, which by the way gave me the opportunity and the inspiration to add a small technical blog (which you are reading right now) using Jekyll. No CMSs were harmed in the making of this blog.
+description: The brief history of how and why I migrated my old html resume to GitHub pages, which by the way gave me the opportunity and the inspiration to add a small technical blog (which you are reading right now) using Jekyll. Neither DBs nor CMSs were harmed in the making of this blog.
 ---
 
 In the recent years, my job responsibilities took me out of the active software development loop. So less then a month ago I decided to start a pet project, just for fun (more on this very topic in another post, hopefully). 
@@ -32,7 +32,7 @@ To sum up some of the pros:
 Since I never had any contact with Jekyll before I had to start from the very beginning: what's Jekyll? Do I need to know Ruby to use it? How do I deploy a simple website and so on?
 The official documentation is a good starting point, it comes with some useful [tutorial](https://jekyllrb.com/tutorials/convert-site-to-jekyll/){:target="_blank"}.
 
-Theoretically you could just write your website according to jekyll standards and push it straight to github for publications, however to make things easier you should install jekyll (and Ruby) and use the command line to build the website, test locally and then eventually push it on GitHub, [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll){:target="_blank"} is a good tutorial for doing this the clean way.
+Theoretically you could just write your website according to jekyll standards and push it straight to github for publications, however to make things easier you should install jekyll (and Ruby) and use the command line to build the website, test locally and then eventually push it on GitHub. Again, a good [tutorial](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll){:target="_blank"} can help if you want to do a clean job.
 
 Some tips I collected along the way:
 1. One you've built the basic layout structure, writing a pages and posts is just as simple as writing a `markdown` file, you just may want to specify in the `_config.yml` file your favourite md processor, highlighter and so on... 
