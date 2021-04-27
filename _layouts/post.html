@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h4>{{ page.title }}</h4>
-<div text-align="right">
+<div class="column" style=text-align:right>
 <p>
     <i>{{ page.date | date_to_string }} </i>
     , 
@@ -12,5 +12,6 @@ layout: default
     {% endfor %}
 </p>
 </div>
-
+<div class="column">
 {{ content }}
+</div>
