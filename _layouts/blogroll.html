@@ -7,15 +7,16 @@ layout: default
 
 {% for post in site.posts %}
 <div class="row" style="margin-top: 1%;">
-    <h5>>> {{ post.title}}</h5>
+    <h5>{{ post.title}}</h5>
          
 
     <p>
-        Published in: 
+        <i> >> Published in: 
         {% for category in post.categories %}
             [{{category}}]
         {% endfor %}
-        <span class="postDate"> - <i>{{ post.date | date: "%b %-d, %Y" }}</i></span>
+        <span class="postDate"> - {{ post.date | date: "%b %-d, %Y" }}</span>
+        </i>
     </p>
 
     <p>

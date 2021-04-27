@@ -3,13 +3,14 @@ layout: default
 ---
 
 <h4>{{ page.title }}</h4>
+<div text-align="right">
 <p>
     <i>{{ page.date | date_to_string }} </i>
-    | 
-    {% for category in post.categories %}
-        [{{category}}]
+    , 
+    {% for category in page.categories %}
+        <i>[{{category}}]</i>
     {% endfor %}
 </p>
-
+</div>
 
 {{ content }}
