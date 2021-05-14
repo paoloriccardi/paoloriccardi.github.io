@@ -30,9 +30,23 @@ The algorithm finds the shortest path between two nodes in a weighted Graph with
 
 The algorithm was [published](http://www-m3.ma.tum.de/foswiki/pub/MN0506/WebHome/dijkstra.pdf){:target="_blank"} in the 50's and it's still widely studied and used in computer science as well as in real world applications, like satellite navigation or video games.
 
-The algorithm starts in a given starting node, it looks around looking for the nodes connected to the actual node and it evaluates the cost for reaching them from the starting node (either directly or not). The algorithm now applies a so called "greedy" choice, which means it makes the picks that looks more promising in that very moment.
+The algorithm starts in a given starting node, it looks around looking for the nodes connected to the actual node and it evaluates the cost for reaching them from the starting node (either directly or not). The algorithm now applies a so called *greedy* choice, which means it makes the picks that looks more promising in that very moment. 
 
 To do so it moves to the node which is reachable with lower cost from the starting node. Once in the new node, again, it looks around looking for newly connected nodes noting the cost for reaching them from the starting node (or updating its cost, if a new more promising path arises).
+
+##### Is Dijkstra Algorithm Greedy?
+
+If you google the question you'll find out that it is  a debated topic. My 2 cents is that it depends a lot on the perspective under which it is defined and presented. 
+
+As we will see better in the [second part]({% post_url 2021-05-01-dijkstra-algorithm-2 %}){:target="_blank"}  of this article, the Dijkstra Algorithm decides which node to *explore* first based on which one is reachable (or rather connectable to the minimum spanning tree) at the lower cost.
+
+This is definitely a *greedy* heuristic, because it chooses a locally optimal alternative at each stage. Furthermore, the choice is never reverted, because an *explored* node goes straight into the minimum spanning tree.
+
+Does that means that the algorithm cannot be presented as a dynamic programming problem? Absolutely not.
+The fact that the shortest path *P* between two nodes will contain other shortest paths between the node traversed in *P* it's called *optimal-substructure*, which indeed opens up to both dynamic programming and greedy approaches.
+
+If you're curious you can check a dynamic programming approach [in this paper](http://matwbn.icm.edu.pl/ksiazki/cc/cc35/cc3536.pdf){:target="_blank"}.
+
 
 ##### The Graph
 
