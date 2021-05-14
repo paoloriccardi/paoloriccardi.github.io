@@ -8,7 +8,7 @@ description: After covering the basics and definyng the class to represent the G
 
 In the [first part]({% post_url 2021-04-30-dijkstra-algorithm-1 %}){:target="_blank"} of this article we covered the preliminary to present the Dijkstra Algorithm. 
 
-We introduced the so called *greedy choice* or greedy heuristic*, that brings the algorithm to makes decisions based on local optimums, picking up the most promising alternative at every step. 
+We introduced the so called *greedy choice* or greedy *heuristic*, that brings the algorithm to make decisions based on local optimums, picking up the most promising alternative at every step. 
 
 We also saw a way to represent an undirected, non-negatively weighted, Graph with some added functionalities that will be useful for the algorithm. 
 
