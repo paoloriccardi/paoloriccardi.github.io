@@ -10,7 +10,7 @@ I've been looking around for a fast way to build Rest API for a work project. Re
 
 Does that mean that Flask is no good for Rest API? Not at all. It just means that you'll have to spend some extra time to do it, after all... everything has its tradeoffs.
 
-To put it simply, I was looking for a quick way to build an unbloated and lightweight Rest API, furthermore since documentation and good standars are paramount when working with heterogeneous teams, I wanted it to be compliant with the most recent version of [OpenApi](https://spec.openapis.org/oas/v3.1.0){:target="_blank"} and to use [Swagger](https://swagger.io/){:target="_blank"} out of the box.
+To put it simply, I was looking for a quick way to build an unbloated and lightweight Rest API, furthermore since documentation and good standars are paramount when working with heterogeneous teams, I wanted it to be compliant with the most recent version of [OpenApi](https://spec.openapis.org/oas/v3.1.0){:target="_blank"} and use [Swagger](https://swagger.io/){:target="_blank"} out of the box.
 
 I spent a whole afternoon looking around and I came across a multitude of alternatives for Python which composed a quite confusing puzzle of framework and expecially framework extensions. To increase the overall confusion there is a huge number of outdated tutorials, which made difficult for me to quickly grasp the state of the art at the moment. 
 
