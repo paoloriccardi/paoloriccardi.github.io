@@ -6,21 +6,46 @@ permalink: /Linenoise/:categories/:title/
 description: A Rest API is a common element of many web services, every programming language and every framework has its own solution to develop a Rest API, I was looking for a fast way to build a lightweight yet OAS compliant API in Python and so I found... FastAPI.
 ---
 
-I've been looking around for a fast way to build Rest API for a work project. Recently, in a similar situation, while developing a pet project, I decided to use [Flask](https://flask.palletsprojects.com/en/2.0.x/){:target="_blank"} for the purpose. Flask is a lightweight web framework for Python, it's simple, it does its job, but in my opinion it doesn't provide, out of the box, all the elements that one would need building a modern Rest API for real. 
+I've been looking around for a fast way to build Rest API for a work project. Recently, in a similar situation, while developing a pet project, I decided to use [Flask](https://flask.palletsprojects.com/en/2.0.x/){:target="_blank"} for the purpose. Flask is a lightweight web framework for Python, it's simple, it does its job, but in my opinion it doesn't provide, out of the box, every element that one would need in order to build a modern Rest API for the real world. 
 
-Does that mean that Flask is no good for Rest API? Not at all. It just means that you'll have to spend some extra time to do it, for example.
+Does that mean that Flask is no good for Rest API? Not at all. It just means that you'll have to spend some extra time to do it, after all... everything has its tradeoffs.
 
-All in all I was looking for a quick way to build an unbloated and lightweight Rest API and I wanted it to be compliant with the last version of [OpenApi](https://spec.openapis.org/oas/v3.1.0){:target="_blank"} and last but not least, I wanted it to be easily and fully documented.
+To put it simply, I was looking for a quick way to build an unbloated and lightweight Rest API, furthermore since documentation and good standars are paramount when working with heterogeneous teams, I wanted it to be compliant with the most recent version of [OpenApi](https://spec.openapis.org/oas/v3.1.0){:target="_blank"} and to use [Swagger](https://swagger.io/){:target="_blank"} out of the box.
 
-I spend a whole afternoon looking around and I came across a plethora of alternatives for Python but none of them looked the right pick: flask-restplus, flask-restful, Django, Tornado etc... to make things worse I a huge number of outdated tutorials, which made difficult for me to grasp the state of the art at the moment. I almost gave up and started considering other languages, my idiosyncrasy for JS was leading me straight into the arms of Go, where concurrency, curly brackets and structs await me.
+I spent a whole afternoon looking around and I came across a multitude of alternatives for Python which composed a quite confusing puzzle of framework and expecially framework extensions. To increase the overall confusion there is a huge number of outdated tutorials, which made difficult for me to quickly grasp the state of the art at the moment. 
 
-Lucky me, I found [this article](https://rapidapi.com/blog/best-python-api-frameworks/){:target="_blank"} which contains a useful, broad picture of the general topic *Python and Rest*  and in the process, showcased many different alternatives, one of them being FastAPI. 
+At that point I almost gave up and started considering other languages other than Python. My idiosyncrasy for JS was leading me straight into the arms of Go, where concurrency, curly brackets and structs wait for a chance to prove their value to the conservative and unaware OO programmer.
 
-I decided to visit the [project website](https://fastapi.tiangolo.com/){:target="_blank"}, it claims to be fast to execute (as fast as Go and NodeJS), fast to code, robust and standards-based. It sounded incredibly appealing. So what I said to the god of Go was... Not today.
+Lucky me, I found an [article](https://rapidapi.com/blog/best-python-api-frameworks/){:target="_blank"} packed with useful informations, which brushed a broad picture of the more general topic *Python & Rest*, presenting several alternatives, one of them being FastAPI. 
 
-Even better, on the same website I found very straightforward, complete and well done Tutorial / User Guide. It took me less than a working day to be in the condition to complete a fully working Rest API, with a simple CRUD, backed by an SQL server for persistence.
+I decided to visit the [project website](https://fastapi.tiangolo.com/){:target="_blank"}, it claimed to be fast to execute (as fast as Go and NodeJS), fast to code, robust and standards-based, all things considered it sounded incredibly appealing. So what do we say to the god of Go? *Not today*.
 
-One of the things that I enjoyed the most was the automatic creation of documentation via Swagger UI. Which means the ability to test each endpoint and to document it for other developer who are going to actually use it. 
+##### ~~RTFM~~ Try the tutorial 
+The thing that made me decide almost instantly for fastAPI is that on the project website I found immediately a very straightforward, complete and clear Tutorial / User Guide, rich of useful links to go deeper on specific topics.
 
+Good documentation means that the guys who developed the tool/framework/whatever actually cared for its adoption by other human beings and this is a thing I always appreciate, you know... as a human being.
+So again, I strongly recommend you to [try it out](https://fastapi.tiangolo.com/tutorial/){:target="_blank"}. 
 
+Retrospectively it was a good call since it took me less than a working day to complete a fully working Rest API, with a simple CRUD, backed by an SQL server for persistence.
+Anyway, by the end of the basic user guide you will have, roughly:
+1. a main app, with 
+    - the routes to the API endpoints
+    - basic error handling
+    - different http methods, body and path parameters
+2. an sql-based persistance layer made of
+    - a database (for the sake of the tutorial it's SQLite)
+    - the crud operations on the database
+    - the SQLAlchemy models
+    - the Pydantic models
+3. swagger which brings
+    - simple, clear and complete documentation with little to no effort
+    - the ability to try and test the endpoints as you go
 
+##### Quick and incomplete recap of what's under the hood
+FastAPI makes use of [starlette](https://www.starlette.io/){:target="_blank"}, a lightweight ASGI framework, which is typically served through an ASGI server implementation called [uvicorn](https://www.uvicorn.org/){:target="_blank"}. 
+
+To take care of all the data validation stuff, FastAPI make heavy use of [Pydantic](https://pydantic-docs.helpmanual.io/){:target="_target"} which also helps when you have to define your own data model and pass it around, or converting it from the JSON contained in the body of a request. 
+
+The tutorial uses [SQLAlchemy](https://www.sqlalchemy.org/){:target="_blank"}, so be warned since this may introduce some confusion between Pydantic Models and SQLAlchemy Models. Keep in mind that the firsts define a valid data shape (a schema), the seconds define the sql tables that represent the data.
+
+As would expect these days, deploying it on Docker is pretty straightforward, you can [check the guide](https://fastapi.tiangolo.com/deployment/docker/){:=target="_blank"} for mode details.
