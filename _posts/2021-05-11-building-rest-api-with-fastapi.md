@@ -41,11 +41,12 @@ Few words about what I got by the end of the basic user guide, roughly:
     - simple, clear and complete documentation with little to no effort
     - the ability to try and test the endpoints as you go
 
-##### Quick and incomplete recap of what's under the hood
+##### Under the hood
 FastAPI makes use of [starlette](https://www.starlette.io/){:target="_blank"}, a lightweight ASGI framework, which is typically served through an ASGI server implementation called [uvicorn](https://www.uvicorn.org/){:target="_blank"}. 
 
 Data validation is a big topic with API, so to take care of all the data validation stuff, FastAPI makes heavy use of [Pydantic](https://pydantic-docs.helpmanual.io/){:target="_target"} which also helps when you have to define your own data model and pass it around, or converting it from the JSON contained in the body of a request. Most of the things you will be able to with a request after it hits an endpoint is empowered by pydantic. 
 
 The tutorial uses [SQLAlchemy](https://www.sqlalchemy.org/){:target="_blank"}, so be warned since this may introduce some confusion between Pydantic Models and SQLAlchemy Models. Keep in mind that the firsts define a valid data shape (a schema), the seconds define (more or less) the sql tables that will represent the data.
 
+##### Docker, yes you can
 Deploying the service via Docker is pretty straightforward, you can [check the guide](https://fastapi.tiangolo.com/deployment/docker/){:=target="_blank"} for mode details. To be honest, my pick was to play it safe, using  `python:3.8` the official python image (based on the latest stable Debian release) and to add the packages I needed as requirements,  `setuptools`,  `fastapi`,  `uvicorn` and  `SQLAlchemy`.
