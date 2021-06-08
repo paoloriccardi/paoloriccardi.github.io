@@ -28,11 +28,11 @@ So again, I strongly recommend you to [try it out](https://fastapi.tiangolo.com/
 Retrospectively it was a good call since it took me less than a working day to complete a fully working Rest API, with a simple CRUD, backed by an SQL server for persistence.
 
 Few words about what I got by the end of the basic user guide, roughly:
-1. a main app, with 
+1. A web app, with 
     - the routes to the API endpoints and resources
     - basic error handling
     - different http methods, response type, body and path parameters
-2. an sql-based persistance layer made of
+2. An sql-based persistance layer made of
     - a database (for the sake of the tutorial it's SQLite)
     - the crud operations on the database
     - the data models (via SQLAlchemy, defined as models in the tutorial)
