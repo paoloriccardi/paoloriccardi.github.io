@@ -3,15 +3,15 @@ title: Who am I
 layout: default
 permalink: /Whoami/
 ---
-### {{page.title}}
+#### {{page.title}}
 
-I'm Paolo Riccardi, Computer Science enthusiast.
-I live in Florence (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect.
+I'm Paolo Riccardi and I've been a Computer Science enthusiast since childhood.
+I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect.
 
-- If you want to cut it short you can just [download](https://drive.google.com/file/d/1cqsDFPhVjfCzJU6vXeXojDGX3foo0Rju/view?usp=sharing){:target="_blank"} my CV, where you will find my contact details, should you ever need to reach me out
-- If you prefer to connect on Linkedin, here's my [profile](https://www.linkedin.com/in/paolo-riccardi-71795a85/en){:target="_blank"}
-- If you're interested in some of my opensource projects, you can checkout my [Github](https://github.com/paoloriccardi){:target="_blank"}
-
+- If you want to check a reasonably updated and rather synthetic curriculum vitae you can check the [Resume](/Resume/) page on this website;
+- If you want to reach out, feel free to check my Linkedin [profile](https://www.linkedin.com/in/paolo-riccardi-71795a85/en){:target="_blank"} and drop a message there;
+- If you're interested in some of my opensource projects, you can checkout my [Github](https://github.com/paoloriccardi){:target="_blank"};
+- If you enjoy reading technical articles and/or book reviews you can check the  [Linenoise](/Linenoise/) page on this website. 
 
 ##### More about me
 I like to tease my brain whenever possible, I'm an avid reader expecially of History and Science books. 

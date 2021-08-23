@@ -3,16 +3,15 @@ title: Resume
 layout: default
 permalink: /Resume/
 ---
-### {{page.title}}
+#### {{page.title}}
 
 ##### What can I do for you?
-I've a 10+ years experience in software and IT, my favourite topic is always been distributed systems, with particular emphasis on backend services and integration components.
+I've a 10+ years experience in software and IT, with particular emphasis on backend services and integration components, over the last years I focused particularly on distributed systems and cloud computing.
 
 I love the solutioning process, I do enjoy tackling problems in order to find solutions.
 I'm curious and I'm a quick learner, I like keeping up to date with IT trends and generally I love learning new and smart ways of doing things, so study is still an important part of my daily routine.
 
-I've good interpersonal skills, which allowed me to be successfully deployed as a support figure to smooth and help the interaction of IT with other Enterprise Departments.
-My soft skills combined with my technical background and my business process awareness have made me helpful both inside and outside the pure IT domain.
+I'm comfortable in the "engine room". A solid technical background, combined with soft skills and business process awareness have made me appreciated both inside and outside the IT domain. This combination has proven valuable inside bluechip companies to smooth the interactions between IT and other Enterprise Departments.
 
 ##### Soft Skills
 - Good communication skills and ability to understand clearly both Business and IT points of view, needs, languages and peculiarities;

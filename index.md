@@ -4,7 +4,7 @@ layout: default
 permalink: /
 ---
 
-### {{page.title}}
+#### {{page.title}}
 
 
 This is my online resume, here you will find basic information about my [professional career](/Resume/) as well as a glance on what I'm doing in my spare time about computer science related topics, readings, reviews, pet projects etc...
