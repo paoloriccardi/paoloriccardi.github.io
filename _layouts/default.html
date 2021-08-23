@@ -24,7 +24,7 @@
 
     <body>
         <div class="container" >
-            <div class="row" style="margin-top: 1%;">
+            <div class="row">
                 <div class="column" style="margin-top: 1%; margin-bottom:1%; text-align:center">
                     <p>
                         <span class="column" style="font-family: 'Roboto', monospace; font-size:xx-large">Blogging Chrome</span>
@@ -35,35 +35,18 @@
                 </div>
             </div>
 
-            <div class="row" style="margin-top: 1%;">
-                <!--    
-                    <div class="two columns" >
-                        <img class="img-circle" src="/images/avat.jpg" alt="avatar">
-                    </div>
-                -->
-                    <div class="column" style="margin-top: 1%; margin-bottom:1%; text-align:center">
+            <hr>
+
+            <div class="row">
+                    <div class="column" style=" text-align:center">
                         <ul id="menu">
                             {% for link in site.data.navigation %}
-                            <li><span style="font-size:normal;"><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></span></li>
+                            <li>
+                                <span style="font-size:normal;"><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></span>
+                            </li>
                             {% endfor %}
                         </ul>
                     </div>
                 </div>
 
-        <div class="row">
-            <div class = "column">
-                {{content}}
-            </div>
-        </div>
-    
-
-        <div class="row" >
-            <div style="margin-top: 10%; margin-bottom:10%">
-              
-              <div class="column" style="font-family: 'Roboto', monospace; text-align:right;">&copy; Paolo Riccardi 2019 </div>
-            </div>
-          </div>
-
-        </div>
-    </body>
-</html>
+                {{ content }}

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_post
 ---
 
 {{ content }}
@@ -8,24 +8,24 @@ layout: default
 {% for post in site.posts %}
 <div class="row" style="margin-top: 1%; ">
     <div class="column">
-        <h5>{{ post.title}}</h5>
-        <p>
-            <span style="font-family: 'Roboto', monospace;">
-                >>  
+        <span style="font-size: x-large;">  {{post.title}}</span>
+        <br>
+            <span style="font-style: italic">  
+                Published on
                 <span class="postDate"> {{ post.date | date: "%b %-d, %Y" }}</span>
-                -
+                in Category 
                 {% for category in post.categories %}
                     [{{category}}]
                 {% endfor %}
             </span>
+            <p>
+                {{ post.description }}
+                <br>
+                <a href="{{ post.url }}">Read more</a>
+            </p>
             
-        </p>
-
-        <p>
-            {{ post.description }}
-            <a href="{{ post.url }}">Read more</a>
-        </p>
-        <hr>
+        
+        
 
 </div>
 

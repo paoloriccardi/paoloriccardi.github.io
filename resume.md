@@ -1,6 +1,6 @@
 ---
 title: Resume
-layout: default
+layout: default_page
 permalink: /Resume/
 ---
 #### {{page.title}}

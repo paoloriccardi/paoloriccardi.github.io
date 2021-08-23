@@ -1,6 +1,6 @@
 ---
 title: Info
-layout: default
+layout: default_page
 permalink: /Whoami/
 ---
 #### {{page.title}}
