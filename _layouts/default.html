@@ -25,10 +25,7 @@
     <body>
         <div class="container" >
             <div class="row" style="margin-top: 1%;">
-                <div class="two columns" >
-                    <img class="img-circle" src="/images/avat.jpg" alt="avatar">
-                </div>
-                <div class="ten columns" style="margin-top: 1%; margin-bottom:1%">
+                <div class="column" style="margin-top: 1%; margin-bottom:1%; text-align:center">
                     <p>
                         <span class="column" style="font-family: 'Roboto', monospace; font-size:xx-large">Blogging Chrome</span>
                     </p>
@@ -39,14 +36,19 @@
             </div>
 
             <div class="row" style="margin-top: 1%;">
-                <div class="ten columns" style="margin-top: 3%; margin-bottom:1%;">
-                    <ul id="menu">
-                        {% for link in site.data.navigation %}
-                        <li><span style="font-size:larger;"><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></span></li>
-                        {% endfor %}
-                    </ul>
+                <!--    
+                    <div class="two columns" >
+                        <img class="img-circle" src="/images/avat.jpg" alt="avatar">
+                    </div>
+                -->
+                    <div class="column" style="margin-top: 1%; margin-bottom:1%; text-align:center">
+                        <ul id="menu">
+                            {% for link in site.data.navigation %}
+                            <li><span style="font-size:normal;"><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></span></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
         <div class="row">
             <div class = "column">
