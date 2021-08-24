@@ -1,7 +1,7 @@
 ---
-title: Info
+title: About
 layout: default_page
-permalink: /Whoami/
+permalink: /About/
 ---
 #### {{page.title}}
 
@@ -9,6 +9,8 @@ permalink: /Whoami/
 
 I'm Paolo Riccardi and I've been a Computer Science enthusiast since childhood.
 I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect.
+
+##### Shortcuts and contacts
 
 - If you just want to check my (very) synthetic curriculum vitae you can visit the [Resume](/Resume/) page on this website;
 - If you want to reach out or get more details, feel free to check my Linkedin [profile](https://www.linkedin.com/in/paolo-riccardi-71795a85/en){:target="_blank"} and drop a message there;
