@@ -7,8 +7,14 @@ permalink: /About/
 
 ##### Who am I
 
-I'm Paolo Riccardi and I've been a Computer Science enthusiast since childhood.
-I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect.
+My name is Paolo Riccardi and I've been a Computer Science enthusiast since childhood.
+
+I knew I was hooked in from the first moment I saw that boxy cursor of my older brother Commodore 64. 
+A lot of things happened over the decades, I switched from Logo and Basic to Pascal and electric guitars in High School. I discovered Slackware and fell in love with Linux and Open Source and more broadly with Hacking as a mindset. 
+Once at University I switched again to C and Java, which were replaced over the years by Php and finally Python (I've just bought a Go manual, so my journey is still going on). 
+In the meantime, before I realized, my passion became my full time job.
+
+Actually I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect for a consulting company. 
 
 ##### Shortcuts and contacts
 
