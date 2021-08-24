@@ -12,6 +12,7 @@ My name is Paolo Riccardi and I've been a Computer Science enthusiast since chil
 I knew I was hooked in from the first moment I saw that boxy cursor of my older brother Commodore 64. 
 A lot of things happened over the decades, I switched from Logo and Basic to Pascal and electric guitars in High School. I discovered Slackware and fell in love with Linux and Open Source and more broadly with Hacking as a mindset. 
 Once at University I switched again to C and Java, which were replaced over the years by Php and finally Python (but I've just bought a Go manual so I would not consider this journey over). 
+
 While at University I discovered distributed systems under the form of process calculus and concurrency theory. Although under a less theoretical perspective, distributed systems are still nowadays my favourite area of technical expertise.
 
 Anyway, over the years, before I realized, my passion became my full time job.
