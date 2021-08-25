@@ -25,5 +25,5 @@ I like to tease my brain whenever possible, I'm an avid reader expecially of His
 
 I currently hold a third dan black belt in Aikido and I’m a certified instructor, if you want to know more on this topic you can visit my [blog](http://www.kinonagare.it){:target="_blank"} (mainly in italian) or my [video channel](https://vimeo.com/kinonagare){:target="_blank"} on Vimeo.
 
-I love cooking, hiking and taking photographs, you can browse my Flickr [photo gallery](https://www.flickr.com/photos/priccardi/){:target="_blank"}.
+I love cooking, hiking and taking photographs, you can watch some of my shots on my Flickr [photo gallery](https://www.flickr.com/photos/priccardi/){:target="_blank"}.
 
