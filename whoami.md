@@ -5,7 +5,7 @@ permalink: /About/
 ---
 #### {{page.title}}
 
-##### Who am I
+##### Who am I?
 
 My name is Paolo Riccardi and I've been a Computer Science enthusiast since childhood.
 
