@@ -62,7 +62,7 @@ The reasons to consider an excess of email messaging a bad omen is pretty obviou
 
 In business processes a similar situation it may imply that people are not empowered enough to make decisions by themselves, or that the procedure is not clear, or that they run into a nasty cornercase or, finally, that there are not enough information attached to the given request to perform a specific activity or workflow. As you can imagine if this is your case you may have some issues to address.
 
-Anyway, beyond the major causes of this situation there is a serious implication, it will be very difficult backtrack anything if the communication is done totally or partially "off the system". Good luck trying to trace back phone calls, who called who, and what was said, or even email for all that matters. That's why ticketing systems allow to refer people, issues etc... inside communications, it would be a mess otherwise.
+Anyway, beyond the major causes of this situation there is a serious implication, it will be very difficult backtrack anything if the communication is done totally or partially "off the system". Good luck trying to trace back phone calls, who called who, and what was said, or even email for all that matters. That's why ticketing systems allow to refer and link people, issues, comments, communications.
 
 
 
