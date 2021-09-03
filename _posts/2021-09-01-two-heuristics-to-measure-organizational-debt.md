@@ -50,19 +50,19 @@ What if instead of project plans we wanted to check sales, which were tracked by
 
 Do you see the recurring theme here?
 
-Let's take our poor PM as an example but be aware that this habit is spread well beyond them, for example I've seen a Christmas holiday plan, with skill coverage per application area and services done with tons of spreadsheets.
+Let's take the PM as an example but be aware that this habit is spread at every level, for example I've seen a Christmas holiday plan, with skill coverage per application area and impacted services, done with spreadsheets.
 Why a PM would invest time producing her own project management tool in the first place? Well there could be several reasons the first that come into my mind is that she doesn't have alternatives.
+Often IT departments are so full of work just to be able to keep the light open, implementing, selecting and deploying extra tools is not something that they can do in a fold of the budget, which is usually already squeezed dry.
+Another possible explanation is that maybe your company has IT tools to support the process but they have some blind spots. Whether nobody in the high plans knows about those blind spot or maybe they know but there's little they can do about it.
 
+As you can imagine, spreadsheets are not the root cause of your problem, they are merely a symptom but whatever the root cause may be, the outcome produced typically have negative consequences on process performance and on the overall organization.
 
+##### Let's talk about emails now
+The reasons to consider an excess of email messaging a bad omen is pretty obvious. Beyond the boilerplate text like "I hope this email finds you well" and such, email messages usually contain information or a request for information. In either case it's an integration to a context that, appartently, is not clear enough by itself. For example, you are paged by your relevant one with a request *"please buy Milk"*, if you text back something like *"which one? Low-fat or whole?"*, we can presume that you are missing part of the context (e.g. your relevant one's on diet).
 
-But nonetheless spreadsheet are commonly used, why? 
-Well here it comes that strange noise from the engine you should be aware of, you don't know what's the problem but you know it's not good. Proliferation of spreadsheets may have different causes, among which:
-- Your company doesn't have the right IT tools 
-- Your company's IT is so full of work just trying to keep the lights up that people prefer the do it yourself approach
-- The IT tools that support the process have blind spots
-- People hide things
- 
-In other words, why do you need to trade emails with your colleague over a bugfix? Because something is not clear in your tracking system for example, or maybe because you need to notify your manager that you're going to take care of it and you will need some time. On the other hand why do you need to use a spreadsheet to track a project or to record this quarter prospects? Because you don't have any other IT tool to support you. 
+In business processes a similar situation it may imply that people are not empowered enough to make decisions by themselves, or that the procedure is not clear, or that they run into a nasty cornercase or, finally, that there are not enough information attached to the given request to perform a specific activity or workflow. As you can imagine if this is your case you may have some issues to address.
+
+Anyway, beyond the major causes of this situation there is a serious implication, it will be very difficult backtrack anything if the communication is done totally or partially "off the system". Good luck trying to trace back phone calls, who called who, and what was said, or even email for all that matters. That's why ticketing systems allow to refer people, issues etc... inside communications, it would be a mess otherwise.
 
 
 
