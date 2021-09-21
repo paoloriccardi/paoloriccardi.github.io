@@ -33,7 +33,7 @@ Don't get me wrong, spreadsheet and emails can be useful, if you're in trouble t
 
 ##### The Spreadsheet incident 
 So I am saying that spreadsheets are a thing of evil, right? No, no, no.
-The first spreadsheet software was called [VisiCalc]{https://en.wikipedia.org/wiki/VisiCalc} and it's impact on the computer industry in 1979 was huge.
+The first spreadsheet software was called [VisiCalc](https://en.wikipedia.org/wiki/VisiCalc){:target="_blank"} and it's impact on the computer industry in 1979 was huge.
 
 Indeed spreadsheets have rock solid reasons to be widely used even today:
 - easy to use for users who don't have a programming background
@@ -43,7 +43,7 @@ My job as Architect taught my one big lesson: it's always about tradeoffs. Somet
 
 For instance...
 
-Let's assume in your company every project manager uses spreadsheets to record project schedule and produce gantt diagrams. One day or another you may want to know how many projects are active in your department. You will have to ask every PM to brief you or to send you their project plans. Chances are you're going to face a long day staring at a screen and talking to people just to have an idea. Not to mention the fact that every spreadsheet you'll receive will likely use different styling, naming conventions, etc...
+Let's assume in your company every project manager uses spreadsheets to record project schedule and produce gantt diagrams. One day or another you may want to know how many projects are active in your department. You will have to ask every PM to brief you and to send you their project plans. Chances are you're going to face a long day staring at a screen and talking to people just to have an idea. Not to mention the fact that every spreadsheet you'll receive will likely use different styling, naming conventions, etc...
 And what if you wanted to know about last quarter projects too? Again, PMs should search for the right version (ahah, that's funny) of the right file and send it to you.  
 
 In other words, every PM has created her/his own private information silo and the worst part is that the creation, update and maintenance of those siloes didn't come cheap in terms of time consumption.
@@ -56,7 +56,7 @@ Here's the million euro question, why someone would invest time producing her/hi
 My point here is that spreadsheets pollution is a symptom that something isn't quite right and, whatever the root cause may be, the outcome produced typically have negative consequences on process performance and on the overall organization.
 
 ##### Let's talk about emails now
-The reasons to consider an excess of email messaging a bad omen is pretty obvious. Beyond the smalltalk pleasantries, email messages usually are about information, provided or requested. In either case it represents an integration to an information context that, appartently, is not clear enough by itself. For example, one day you are paged by your relevant one with the request *"please buy Milk"*, if you have text back something like *"which brand? Low-fat or whole? Soy or cow?"*, we can presume that you are missing part of the context (e.g. your relevant one doesn't stand whole milk).
+The reasons to consider an excess of email messaging a bad omen is pretty obvious. Beyond the smalltalk pleasantries, email messages usually are about information, either provided or requested. In either case it represents an integration to an information context that, appartently, is not clear enough by itself. For example, one day you are paged by your relevant one with the request *"please buy Milk"*, if you have to text back something like *"which brand? Low-fat or whole? Soy or cow?"*, we can presume that you are missing part of the context (e.g. your relevant one doesn't stand whole milk).
 
 If a similar situation occurs (and it does) in business processes this may imply several things, just to mention a few: 
 - people are not empowered enough to make decisions by themselves
@@ -64,11 +64,16 @@ If a similar situation occurs (and it does) in business processes this may imply
 - unplanned cornercases and exceptions
 - missing information for a given request
 
-Whatever the reason(s) you may have some issue to address but in the meantime you will havean obvious outcome: it will be very difficult to backtrack anything since the communications were  done totally or partially off the system or off the records. Good luck trying to trace back what happened. 
+Whatever the reason(s) you may have some issue to address but in the meantime you will have an obvious outcome: it will be very difficult to backtrack anything since the communications were done either totally or partially off the system and off the records. Good luck trying to trace back what happened. 
 
 ##### Conclusions
 What's really missing here is a cohesive environment where data are shared and communications are integrated in the workflow. It may look simple, but beyond the more common cases you cannot always take for granted that you have the right tool to support every specific piece of task inside the process.
-Be aware though, because usually tools cannot fix a process by themselves, even though they may help the transition to a better process. Applying some computer science common sense we can say that you won't fix a quadratic sorting algorithm simply by putting a better CPU, you will need to rewrite the algorithm using a different approach. In other words you need to sit down and reconsider the problem you were trying to fix in the first place... maybe yesterday your business process was just fine for the job but now perhaps the scenario is different and you will need to adapt. 
+
+Be aware though, because usually tools cannot fix a process by themselves, even though they may help the transition to a better process. Most important of all you should start from the process and work your way to the it tools to support it, not vice versa. 
+
+Applying some computer science common sense we can say that you won't fix a quadratic sorting algorithm simply by putting a better CPU, you will need to rewrite the algorithm using a different approach. 
+
+In other words you need to sit down and reconsider the problem you were trying to fix in the first place... maybe yesterday your business process was just fine for the job but now perhaps the scenario is different and you will need to adapt. 
 
 
 
