@@ -69,7 +69,7 @@ Whatever the reason(s) you may have some issue to address but in the meantime yo
 ##### Conclusions
 What's really missing here is a cohesive environment where data are shared and communications are integrated in the workflow. It may look simple, but beyond the more common cases you cannot always take for granted that you have the right tool to support every specific piece of task inside the process.
 
-Be aware though, because usually tools cannot fix a process by themselves, even though they may help the transition to a better process. Most important of all you should start from the process and work your way to the it tools to support it, not vice versa. 
+Be aware though, because usually tools cannot fix a process by themselves, even though they may help the transition to a better process. Most important of all you should start from the process and work your way to the best IT tools to support it, not vice versa. 
 
 Applying some computer science common sense we can say that you won't fix a quadratic sorting algorithm simply by putting a better CPU, you will need to rewrite the algorithm using a different approach. 
 
