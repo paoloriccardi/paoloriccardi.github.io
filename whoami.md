@@ -8,16 +8,20 @@ permalink: /About/
 ##### Who am I?
 
 My name is Paolo Riccardi and I've been a Computer Science enthusiast since childhood.
-I knew I was hooked in from the first moment I saw that boxy cursor of my older brother Commodore 64. 
+I knew I was hooked in from the moment when, as a child, I saw for the first time the blinking, boxy cursor of my older brother's Commodore 64. 
 
-I switched from Logo and Basic to Pascal and electric guitars in High School. I discovered Slackware and fell in love with Linux and Open Source and more broadly with Hacking as a mindset. 
+I switched from Logo and Basic to Pascal and electric guitars in High School, then I discovered Slackware and fell in love with Linux and Open Source and more broadly with Hacking as a mindset. 
 
-While at University I started using regularly C and Java, which were joined over the years by Php, Objective C and Python... and I've just bought a Go manual which is on top of my tech books backlog. 
+While at University I started using regularly C and Java, which were joined over the years by Php, Objective C and Python... and by the way I've just bought a Go [handbook](https://www.oreilly.com/library/view/learning-go/9781492077206/){:target="_blank"} which is on top of my tech books backlog. 
 
 While at University I discovered distributed systems under the form of process calculus and concurrency theory. Although under a less theoretical perspective, distributed systems are still nowadays my favourite area of technical expertise.
 
 Over the years, before I knew it, my passion became my full time job.
 Now I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect for a consulting company. 
+
+##### Reach out
+
+I no longer keep my personal contact information on this page, so should you need to reach out, you can visit my Linkedin [profile](https://www.linkedin.com/in/paolo-riccardi-71795a85/en){:target="_blank"} and drop me a message or ask me my personal contacts there. 
 
 ##### What else?
 
