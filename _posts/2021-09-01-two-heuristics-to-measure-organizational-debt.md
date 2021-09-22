@@ -2,7 +2,8 @@
 title: Two heuristics to measure entropy in Organizations
 layout: post
 categories: Org
-permalink: /Linenoise/:categories/:title/
+#permalink: /Linenoise/:categories/:title/
+permalink: /Linenoise/:title/
 description: In every complex organization there are two common artifacts that are omnipresent, emails and spreadsheets, right? Well what if I tell you that their presence in high volumes is a clear symptom that something is wrong. We can call it a heuristic if you want or process consultancy wisdom, either way in this post I'll try to explain in simple terms why they apply.
 ---
 ##### Business Processes

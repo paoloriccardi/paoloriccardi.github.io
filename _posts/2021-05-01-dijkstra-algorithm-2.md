@@ -2,7 +2,8 @@
 title: My implementation of the Dijkstra Algorithm, part 2
 layout: post
 categories: DSA
-permalink: /Linenoise/:categories/:title/
+#permalink: /Linenoise/:categories/:title/
+permalink: /Linenoise/:title/
 description: After covering the basics and definyng the class to represent the Graph that will be used by the Dijkstra Algorithm, which is illustrated in detail here in this article.
 ---
 
