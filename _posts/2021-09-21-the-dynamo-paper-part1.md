@@ -47,20 +47,39 @@ Other key principles followed (or we should say proposed) by Dynamo are:
 - Scale incrementally one node at a time
 - Every node must have the same responsibilities
 - Decentralized peer-to-peer system
-- The system needs to distribute work proportionally to the capability of the node (to favour heterogeneity of hardware setups)
+- The system needs to distribute work proportionally to the capability of the nodes (to favour heterogeneity of hardware setups)
 
-##### Related works, P2P and distributed FS/DB
+##### Architecture
 
+##### System Interface
+Dynamo's interface exposes two operations: 
+- `get(key)` locates the object replicas associated with the `key` in the storage system and returns a single objects (or a list of objects with conflicging versions) along with a *context* 
+- `put(key, context, object)` determines where the replicas of the object should be placed based on its `key` and persist the replicas, `context` encodes system metadata about the object (e.g. its version). 
+
+An hash of `key` is calculated to determine the storage nodes that will be responsible for storing/serving the key.
+
+##### Partitioning
+When we say that we want the system to scale incrementally, we're basically requiring a mechanism to dynamically partition the data (key-values) over a set of node that may change, this is done via [consistent hashing](https://www.cs.princeton.edu/courses/archive/fall09/cos518/papers/chash.pdf){:target="_blank"}.
+
+The output from the hash function used (MD5) is a 128-bit number and in *consistent hashing* it's treated as a circular space, which means that the immediate follower of the max value that the hash can generate is the smallest one.
+
+To each node in the system is associated a random value by the hash function, that is to say a position on the ring. The same is done for a key and once we've placed it according to its value we start walking the ring clockwise to find the first node which has a position larger than the key. This way, every node is responsible for the region of the ring between itself and its predecessor on the ring. Any departure or arrival of a node only affects its immediate neighbors while other nodes remain unaffected.
+
+
+
+##### Replication
+
+##### Versioning
 
 
 ##### First part conclusions
-I found about this paper reading the bibliography of the amazing [book](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/){:target="_blank"} *Designing Data-Intensive Applications*  by Martin Kleppmann. I hope I will be able to write some posts on that book too because it contains a lot of interesting stuff about distributed systems and because its reading pushed me to start a [pet project](https://github.com/paoloriccardi/key-value-log){:target="_blank"} which is fundamentally a key value distributed datastore, but this too will hopefully be the topic for another post.
+I found about this paper in the bibliography of the amazing [book](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/){:target="_blank"} *Designing Data-Intensive Applications*  by Martin Kleppmann. I hope I will be able to write some posts on that book too because it contains a lot of interesting stuff about distributed systems and because it pushed me to start a [pet project](https://github.com/paoloriccardi/key-value-log){:target="_blank"} which is fundamentally a key value distributed datastore, but this too will hopefully be covered in another post.
 
 One of the first thing that I've noticed, while reading the paper for the first time is that it's dense of concepts, what's addressed in a couple of semicolons can easily take pages and pages on an average undergraduate course handbook about concurrency. 
 
-Indeed, a big piece of both my BS and MS course in Computer Science was about distributed systems, so I was already familiar with concurrency related problems in general, yet I found the paper very insightful, everything was laid out in a straight line, with a very practical approach.
+Indeed, a big piece of both my BS and MS course in Computer Science was about distributed systems, so I was already familiar with concurrency related problems and topics in general, yet I found the paper very insightful, everything was laid out in a straight line, with a very practical approach.
 
-Of course the paper doesn't contain a full discussion on topics like replication, partitioning etc... it just defines the problems they wanted to address and explains a possible solution. I would say that for a more deep treatment of those issues the Martin Kleppmann book linked above is a great resource.
+Of course the paper doesn't contain a full discussion on topics like replication, partitioning etc... it just defines the problems they wanted to address and explains a possible solution. If you want to go deep about these topics, then the Martin Kleppmann book linked above is a great resource.
 
 <!---
 ##### Table of contents
