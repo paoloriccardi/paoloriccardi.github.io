@@ -69,10 +69,20 @@ When you store your data in a system you don't want it to disappear on the other
 
 Replicating your data through multiple nodes is a common solution solution to mitigate the outcomes of node failures and to provide a more scalable solution to serve client requests. This often translates into better availability, even though going multi-node usually bring in concurrency issues, like the aforementioned consistency.
 
+So each data is replicated and lives on different nodes (how many nodes is a parameter that can be configured). A *key* is assigned to a coordinator node which is in charge of the replication of the data items placed in his competence area on the ring of values given by the consistent hashing.
+A *key* is then copied by the coordinator node  on a given number of nodes that are placed nearby the coordinator on the hash ring (the followers in clockwise ordering). Each node is responsible for the keys that falls in surface of the ring that start from his position and ends a fixed number of following nodes.
 
+The list of nodes in charge of storing each key is called the *preference list*, so that even if a node fails there are others to cover for specific keys.
 
 ##### Versioning
+What could happen if you propagate changes on data asynchronously is that you will end up with unconsistent states, which means you could have a key that could have multiple different version of that `key:value` at the same moment. 
 
+Each different version of the data may live its own life span until they are reconciled one way or another (by the client application of by the nodes in the system).
+The history deriving from each version may imply a causality chain between versions and subversions, to capture this dynamics, Dynamo uses [vector clocks](https://en.wikipedia.org/wiki/Vector_clock){:target="blank"}. 
+
+To be (a little bit) more specific, in Dynamo a client that wants to update an object, it needs to specify which version is updating, this information is provided by the client in the beforementioned *context*.
+
+For further readings about ordering of events in distributed systems, I would recommend *Time, Clocks and the ordering of events in a Distributed System* by *Leslie Lamport*. You can find a copy of this paper [here](https://lamport.azurewebsites.net/pubs/time-clocks.pdf){:target="_blank"}.
 
 ##### First part conclusions
 I found about this paper in the bibliography of the amazing [book](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/){:target="_blank"} *Designing Data-Intensive Applications*  by Martin Kleppmann. I hope I will be able to write some posts on that book too because it contains a lot of interesting stuff about distributed systems and because it pushed me to start a [pet project](https://github.com/paoloriccardi/key-value-log){:target="_blank"} which is fundamentally a key value distributed datastore, but this too will hopefully be covered in another post.
