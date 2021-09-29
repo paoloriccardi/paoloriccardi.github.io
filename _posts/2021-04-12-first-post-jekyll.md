@@ -1,8 +1,9 @@
 ---
 title: How I did it, from mr. Html to dr. Jekyll
 layout: post
-categories: Dev 
-permalink: /Linenoise/:categories/:title/
+categories: Dev
+#permalink: /Linenoise/:categories/:title/
+permalink: /Linenoise/:title/
 description: The brief history of how and why I migrated my old html resume to GitHub pages, which by the way gave me the opportunity and the inspiration to add a small technical blog (which you are reading right now) using Jekyll. Neither DBs nor CMSs were harmed in the making of this blog.
 ---
 

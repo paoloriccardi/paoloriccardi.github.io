@@ -2,7 +2,8 @@
 title: My implementation of the Dijkstra Algorithm, part 1
 layout: post
 categories: DSA
-permalink: /Linenoise/:categories/:title/
+#permalink: /Linenoise/:categories/:title/
+permalink: /Linenoise/:title/
 description: Dijkstra Algorithm is maybe the most famous algorithm in the domain of graph theory, it's a classic and for very good reasons. In the first part of the article we're going to cover the basics, defining a basic implementation of the Graph class that we're going to use in the second part.
 ---
 
