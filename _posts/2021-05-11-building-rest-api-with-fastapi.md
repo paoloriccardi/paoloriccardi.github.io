@@ -1,7 +1,7 @@
 ---
 title: Building OAS3 compliant, Rest API in Python, using FastAPI
 layout: post
-categories: Dev
+categories: Software_Development
 #permalink: /Linenoise/:categories/:title/
 permalink: /Linenoise/:title/
 description: A Rest API is a common element of many web services, every programming language and every framework has its own solution to develop a Rest API, I was looking for a fast way to build a lightweight yet OAS compliant API in Python and so I found... FastAPI.

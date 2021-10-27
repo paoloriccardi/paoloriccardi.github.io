@@ -1,7 +1,7 @@
 ---
 title: The Dynamo paper, part 1
 layout: post
-categories: DS
+categories: Distributed_Systems
 #permalink: /Linenoise/:categories/:title/
 permalink: /Linenoise/:title/
 description: The famous Dynamo paper was published in 2007 by the group of Amazon engineers. It describes in just 16 pages, including a rich bibliography, an highly available, distributed key-value store which inspired many noSQL databases like Cassandra, DynamoDB and Riak. For good reasons it's considered by many one of the most influential papers ever written on databases. In this post I'll start to point out, with examples and sketches, all those elements that I found relevant in the first half of the paper. 
