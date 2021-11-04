@@ -17,11 +17,15 @@ Anyway the first has been my favourite reference trying to understand the langua
 
 It's fairly common to spot things like "In the language X you can also do things in a sort of language Y kind of fashion", javisms in Python or vice versa, well this is not the case, not with this manual and not with Go anyway.
 
-Go has it's own way of doing things and the margin of choice left to the programmer is reduced. For example, do you put curly brackets right at the end of the method declaration or on the newline? In Go you don't have this choice, one of the two returns error at compiling time. For example the following code is considered not correct:
+Go has it's own way of doing things and the margin of choice left to the programmer in terms of coding style is reduced. 
+For example, do you put curly brackets right at the end of the method declaration or on the newline? In Go you don't have this choice, one of the two returns error at compiling time. 
+
 ```go
 func main()
 {
     fmt.Println("This is not valid in Go!")
 }
 ```
+
+This is pretty surprising if you come from a world where people deciding between spaces and tabs can break relationships as discussed in a famous [Silicon Valley episode](https://www.imdb.com/title/tt5218484/){:target="_blank"}... by the way, for Go fmt it's tabs (and I agree on that specific tenet).
 
