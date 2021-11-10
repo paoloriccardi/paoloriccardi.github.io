@@ -38,7 +38,8 @@ I think the idiomatic element is very important in any language to fully leverag
 If you read this book, you'll find that one of the most recurring sentence will be something like "This feature is legal, but anyway if you have to use it too often, or if you need it beyond these circumstances, maybe you should consider refactoring you code logic to remove it". 
 The tenet of producing clean code is everywhere and I resonate with this idea a lot. 
 
-In my opinion, one of the worst thing that can happen to programmers is to think that it's enough for their code to just work. I would say that this should be the minimum requirement for a professional. Taping a broken wing on a falling airplane may be a necessary emergency measure but as soon as the airplane has landed you should fix the issue in a permanent way.
+In my opinion, one of the worst thing that can happen to programmers is to think that it's enough for their code to just work. I would say this should be the minimum requirement for a professional, then there are all the so called *ilities* to ensure.
+Taping a broken wing on a falling airplane may be a necessary emergency measure but as soon as the airplane has landed you should fix the issue in a permanent way.
 Unfortunately, the IT world out there is full of temporary solutions that have become permanent, producing tons and tons of undocumented and unrecognized technical debt.
 
 Speaking of bibliography, another great book which is worth mentioning and from which I'm sneak peaking from time to time, is the classic [The Go Programming Language](https://www.gopl.io/){:target="_blank"} by Alan A. A. Donovan and Brian W. Kernighan. Yes, that Brian W. Kernighan. 
@@ -71,23 +72,28 @@ This idea make sense even if you think about another aspect, the growth of a Pro
 Standards help reducing the complexity that joining a new project implies. If your city is burning and the local fire department is failing to put down the fire it's easier to receive help from the firefighters of nearby cities if their hose couplings fit your fire hydrants. Does it seem like an unrealistic scenario? Go check the [Great Baltimora fire](https://en.wikipedia.org/wiki/Great_Baltimore_Fire){:target="_blank"} to see what I mean.
 
 ##### Old habits die hard
-I've used several programming languages in my life: Basic, Pascal, C, Php, JS, Java, Objective C, but the one I've been using the most, in the last years is Python. 
-
-Why Python? Well, the first reason that comes to my mind is that since I'm not so closely involved in the daily coding process anymore, so when I do usually it's for either:
-- Building a tactical tool with few to zero strings attached (e.g. cleaning a dataset or putting up a quick webservice for a PoC)
+I've used several programming languages in my life: Basic, Pascal, C, Php, JS, Java, Objective C, but the one I've been using the most, in the last years is Python. I'm not coding on a daily basis and when I am, usually it's for either:
+- Building a tactical tool (e.g. cleaning a dataset or putting up a quick webservice for a PoC)
 - Working on some pet project (I'll eventually pitch one of them in another post)
 
-So usually no teams or codebases to comply against unless I choose to, and no particular technical boundaries.
-Furthermore I don't do this as a regular activity, so I need something that is robust but even easy going and somewhat forgiving.
-Python fits the role perfectly, you can do pretty much anything with it, even if it won't guarantee top notch performances but most of all you can pick it up after months of inactivity and feel at home right away, being productive in minutes.
+So usually no strings attached, no teams or codebases to comply with unless I choose to, and no particular technical boundaries.
+Since I don't code as a daily activity I needed a language that proves robust but also easy to pick up after weeks.
+Python fits the role perfectly, you can do pretty much anything with it and even if it won't guarantee top notch performances, its eco-system is wide and rich in terms of community support and libraries. Another cool feature of Python is that it can be easily understood by anybody...it fits academics as well as software engineers and tech enthusiasts. 
 
-In a way I got used to that cozy and familiar environment that Python was offering and in IT being in your comfort zone too much usually is up to no good. To put this under another perspective, I've been practicing martial arts for the last 20 years, over time I've met a lot of interesting people from different backgrounds and I tried to learn something from each and everyone of them, well once I met a Karate instructor who told me one thing that fits this situation perfectly: *Comforts kill you*. 
+In a way I got used to that cozy and familiar environment that Python was offering, so if I got an idea for a pet project I tried it in Python first. That's not bad but it could become a limitation if not for the project itself for my ability to experiment and learn new things. 
 
-##### Pointers!!!
+To put it under another perspective, I've been practicing martial arts for the last 20 years, over time I've met a lot of interesting people from different backgrounds and I tried to learn something from each and everyone of them. Once I met a Karate instructor who told me one thing that fits this situation perfectly: *Comforts kill you*. 
+
+##### Pointers and memory
+I think it was almost ten years ago the last time I used a programming language with pointers in the menu. Back then I was in charge of rewriting the Java codebase of a bunch of Android native apps to iOS, using Objective C. I wasn't an Apple guy, I bought a third hand macbook pro and iphone just for the job and sold them both right after, so my relationship with that particular language didn't last more than the necessary. 
+
+On the other hand I can account for a longer and older relationship with another language that used pointers, the good old C.
 I discovered C during a university course (or rather a lab) that was about networks and afterwards I used it quite a bit, mostly for fun. Two of the most remarkable things I did with C was a Chess program for my bachelor degree final thesis and an extension for a Ray Tracer that allowed it to render Julia sets using quaternions. The following images were rendered (almost 12 years ago) with that extension.
 ![Julia sets over quaternions](/images/julias.jpg){:width="75%" height="75%" .center-image}
 
+So when I started with Go I wasn't new to manage the memory for my own software and clean after them, but I was definitely out of shape. Lucky me, Go has a garbage collector which makes life a lot more easier than having to clean up by yourself using `free`, like in C. On the other side you cannot do pointer mathematics (like you could in C), unless you use the (rather self discribing) `unsafe` package from the standard library. 
 
+My two cents is that having to learn how to deal with pointers with the help of a latency optimized garbage collector makes a huge benefit even for newbie programmers that want to lean how to keep control over memory allocation, well at least I would have loved a thing like that when I learned C.
 
 ##### The last surprise
 When you come to Go from a different background (as I did), while learning Go you'll have a lot of "what the heck!" moments. This happens because, as I said not only Go is a beast of its own but because it does things in its own way and it require you to adapt as a developer to that mindset.
@@ -99,16 +105,3 @@ Another major thing, at least for me, is that Go isn't particularly object orien
 I don't want to enter now in this subject but just to give a quick sketch:
 - uses  `struct` to represent the state of entities and methods to describe behaviors instead of using a class for both
 - follows the rule of thumb to favour composition over inheritance 
-
-<!---
-Here are some of the things that struck my attention so far:
-1. Source code formatting is enforced X
-2. Every variable not assigned to a value get the `zero` value of its own type
-3. There is only one looping keyword, which is `for`, that can be used in 4 different ways according to your needs X  
-4. Variable's visibility is related to the block it is in, which mean that a variable can be *shadowing* another with the same name in a containing block
-5. Go uses pass by value
-6. There is no such a thing as automatic type conversion or automatic type promotion, so if you try to sum a `uint32` and a `uint64` you will get an error, also be aware that the `int` type varies upon the architecture (32 vs 64 bit)
-7.  There are lots of situation in the book where you will find words such as "If you find yourself needing to use fallthrough, try restructure your logic to remove the dependencies between cases" or "However, the need for a break statement (in switch cases ndr) might indicate that you are doing something too complicated. Consider refactoring you code to remove it"
-8. It has goto
-9. 
---->
