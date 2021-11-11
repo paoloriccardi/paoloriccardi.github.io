@@ -71,7 +71,7 @@ This idea make sense even if you think about another aspect, the growth of a Pro
 
 Standards help reducing the complexity that joining a new project implies. If your city is burning and the local fire department is failing to put down the fire it's easier to receive help from the firefighters of nearby cities if their hose couplings fit your fire hydrants. Does it seem like an unrealistic scenario? Go check the [Great Baltimora fire](https://en.wikipedia.org/wiki/Great_Baltimore_Fire){:target="_blank"} to see what I mean.
 
-##### Old habits die hard
+##### Where I came from
 I've used several programming languages in my life: Basic, Pascal, C, Php, JS, Java, Objective C, but the one I've been using the most, in the last years is Python. I'm not coding on a daily basis and when I am, usually it's for either:
 - Building a tactical tool (e.g. cleaning a dataset or putting up a quick webservice for a PoC)
 - Working on some pet project (I'll eventually pitch one of them in another post)
@@ -84,24 +84,27 @@ In a way I got used to that cozy and familiar environment that Python was offeri
 
 To put it under another perspective, I've been practicing martial arts for the last 20 years, over time I've met a lot of interesting people from different backgrounds and I tried to learn something from each and everyone of them. Once I met a Karate instructor who told me one thing that fits this situation perfectly: *Comforts kill you*. 
 
-##### Pointers and memory
-I think it was almost ten years ago the last time I used a programming language with pointers in the menu. Back then I was in charge of rewriting the Java codebase of a bunch of Android native apps to iOS, using Objective C. I wasn't an Apple guy, I bought a third hand macbook pro and iphone just for the job and sold them both right after, so my relationship with that particular language didn't last more than the necessary. 
+When you come to Go from a different background (as I did), while learning Go you'll have a lot of "what the heck!" moments. This happens because Go is a beast of its own which does things its own way, so I needed some adjustment.
 
-On the other hand I can account for a longer and older relationship with another language that used pointers, the good old C.
-I discovered C during a university course (or rather a lab) that was about networks and afterwards I used it quite a bit, mostly for fun. Two of the most remarkable things I did with C was a Chess program for my bachelor degree final thesis and an extension for a Ray Tracer that allowed it to render Julia sets using quaternions. The following images were rendered (almost 12 years ago) with that extension.
+##### Change n.1: Pointers and memory
+The last time I used pointers was around ten years ago, I had to rewrite in Objective C the Java codebase of a bunch of Android native apps (which by the way I had written some months before) to port them to iOS. I wasn't an Apple guy, I bought a third hand macbook pro and iphone just for the job and get rid of both of them right after, so my relationship with that particular language didn't last more than the necessary. 
+
+Before that I used to have a way longer and older relationship with another language that used pointers, the good old C.
+I discovered C during a university and in that phase of my life I used it quite a bit, mostly for fun. For instance I developed a Chess program for my bachelor degree final thesis and before that aplugin that allowed an open-source Ray Tracer to render Julia sets defined over quaternions. The following images were rendered (almost 12 years ago) with that extension.
 ![Julia sets over quaternions](/images/julias.jpg){:width="75%" height="75%" .center-image}
 
 So when I started with Go I wasn't new to manage the memory for my own software and clean after them, but I was definitely out of shape. Lucky me, Go has a garbage collector which makes life a lot more easier than having to clean up by yourself using `free`, like in C. On the other side you cannot do pointer mathematics (like you could in C), unless you use the (rather self discribing) `unsafe` package from the standard library. 
 
 My two cents is that having to learn how to deal with pointers with the help of a latency optimized garbage collector makes a huge benefit even for newbie programmers that want to lean how to keep control over memory allocation, well at least I would have loved a thing like that when I learned C.
 
-##### The last surprise
-When you come to Go from a different background (as I did), while learning Go you'll have a lot of "what the heck!" moments. This happens because, as I said not only Go is a beast of its own but because it does things in its own way and it require you to adapt as a developer to that mindset.
+So what you could do with pointers in Go? Well you could use them to have mutable function parameters for example. Go is pass by value, so it passes a copy of the data (which may mean a copy of the actual data for primitive types, structs and arrays and a copy of the pointer for slices).
+Or you can use pointers to pass a big struct parameter to a function even if you don't want it to be mutable, just for improving performances.
 
-That's not a bad thing per se but I admit that the first impact may be a thing to deal with. I had to reconsider some habits that with a new language wouldn't fit anymore, like the flexibility with types that Python allows.
+##### Change n.2: No classes, no inheritance
+If the pointer thing will take just some mental gymnastic to get used to it, the absence of classes (and inheritance) is something that require a deeper understanding because impacted the way a developer thinks code. 
 
-Another major thing, at least for me, is that Go isn't particularly object oriented in the conventional sense, since it has no method overriding, inheritance or objects. 
+If you've been in OO programming long enough there is a very high probability that you keep this book [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns){:target="_blank"} somewhere very close to your reach, as a hardcover in the bookshelf nearby your desk or as a pdf in your cloud storage. 
 
-I don't want to enter now in this subject but just to give a quick sketch:
-- uses  `struct` to represent the state of entities and methods to describe behaviors instead of using a class for both
-- follows the rule of thumb to favour composition over inheritance 
+One of the things you learn from this book is the concept of "composition over inheritance". This makes a lot of sense, it's easier to define what you have in your pocket (preciousss) rather that what you are (Bilbo was a Hobbit but how could Gollum tell a Bolger from a Baggins? And why should he even care since he was only interested in the ring?). 
+
+In other words, it's easier to define cleaner structures using relationships of the kind *HAS-A* rather than *IS-A*.
