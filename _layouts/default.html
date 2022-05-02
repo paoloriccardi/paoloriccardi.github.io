@@ -3,49 +3,50 @@
     <head>
         <meta charset="utf-8">
         <title>{{page.title}} | {{site.title}}</title>
-        <meta name="description" content="">
+        <meta name="description" content="Paolo Riccardi online resume and technical blog">
         <meta name="author" content="Paolo Riccardi">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat&display=swap" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="{{ site.baseurl }}{% link /css/normalize.css %}">
         <link rel="stylesheet" href="{{ site.baseurl }}{% link /css/skeleton.css %}">
+
+        <link rel="stylesheet" href="{{ site.baseurl }}{% link /css/syntaxhighlight.css %}" >
+
 
         <link rel="icon" type="image/png" href="/images/favicon.png" >
 
     </head>
 
     <body>
-        <div class="container">
-            <div class="row" style="margin-top: 1%">
-                <div class="two columns">
-                    <img class="img-circle" src="/images/avat.jpg" alt="avatar">
-                </div>
-                <div class="ten columns" style="margin-top: 2%; margin-bottom:10%">
-                    <ul id="menu">
-                        {% for link in site.data.navigation %}
-                        <li><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></li>
-                        {% endfor %}
-                    </ul>
+        <div class="container" >
+            <div class="row">
+                <div class="column" style="margin-top: 1%; margin-bottom:1%; text-align:center">
+                    <p>
+                        <span class="column" style="font-family: 'Roboto', monospace; font-size:xxx-large">Blogging Chrome</span>
+                    </p>
+                    <p>
+                        <span class="column" style="font-family: 'Roboto', monospace; font-size:normal">Technical Blog and online Resume</span>
+                    </p>
                 </div>
             </div>
 
-        <div class="row">
-            <div class = "column">
-                {{content}}
-            </div>
-        </div>
-    
+            <hr>
 
-        <div class="row" >
-            <div style="margin-top: 10%; margin-bottom:5%">
-              <hr>
-              <div class="column" style=text-align:right>&copy; Paolo Riccardi 2019 </div>
-            </div>
-          </div>
+            <div class="row">
+                    <div class="column" style=" text-align:center">
+                        <ul id="menu">
+                            {% for link in site.data.navigation %}
+                            <li>
+                                <span style="font-size:normal;"><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a></span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
 
-        </div>
-    </body>
-</html>
+                {{ content }}

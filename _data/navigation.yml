@@ -1,11 +1,11 @@
 - title: Home 
   url: /
 
-- title: Who Am I 
-  url: /Whoami/
+- title: About 
+  url: /About/
 
-- title: Professional
-  url: /Professional/
+- title: Resume
+  url: /Resume/
 
 - title: Linenoise
   url: /Linenoise/

@@ -1,28 +1,34 @@
 ---
-layout: default
+layout: default_post
 ---
 
 {{ content }}
 
 
 {% for post in site.posts %}
-<div class="row" style="margin-top: 1%;">
-    <h5>>> {{ post.title}}</h5>
-         
+<div class="row" style="margin-top: 1%; ">
+    <div class="column">
+        <span style="font-size: x-large;">  {{post.title}}</span>
+        <br>
+            <span style="font-style: italic">  
+                Published by Paolo Riccardi on
+                <span class="postDate"> {{ post.date | date: "%b %-d, %Y" }}</span>
+                in Category 
+                {% for category in post.categories %}
+                    [{{category}}]
+                {% endfor %}
+            </span>
+            <p>
+                {{ post.description }}
+                <br>
+                <a href="{{ post.url }}">Read more</a>
+            </p>
+            
+        
+        
 
-    <p>
-        Published in: 
-        {% for category in post.categories %}
-            [{{category}}]
-        {% endfor %}
-        <span class="postDate"> - <i>{{ post.date | date: "%b %-d, %Y" }}</i></span>
-    </p>
+</div>
 
-    <p>
-        {{ post.description }}
-        <a href="{{ post.url }}">Read More</a>
-    </p>
-<hr>
 </div>
 
 {% endfor %}

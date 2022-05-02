@@ -1,9 +1,25 @@
 ---
-layout: default
+layout: default_post
 ---
 
-<h4>{{ page.title }}</h4>
-<p>{{ page.date | date_to_string }} </p>
+<div class="row">
+    <div class="column">
+    <span style="font-size: x-large;"> {{ page.title }}</span>
+    <p>
+        <span style="font-style: italic;">
+            Published by Paolo Riccardi on
+            {{ page.date | date_to_string }} 
+            in Category
+            {% for category in page.categories %}
+                [{{category}}]
+            {% endfor %}
+        </span>
+    </p>
+    </div>
+</div>
 
-
-{{ content }}
+<div class="row">
+    <div class="column">
+    {{ content }}
+    </div>
+</div>

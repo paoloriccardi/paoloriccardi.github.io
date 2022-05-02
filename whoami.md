@@ -1,22 +1,33 @@
 ---
-title: Who am I
-layout: default
-permalink: /Whoami/
+title: About
+layout: default_page
+permalink: /About/
 ---
-## {{page.title}}
+#### {{page.title}}
 
-I'm Paolo Riccardi, Computer Science enthusiast.
-I live in Florence (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect.
+##### Who am I?
 
-- If you want to cut it short you can just [download](https://drive.google.com/file/d/1cqsDFPhVjfCzJU6vXeXojDGX3foo0Rju/view?usp=sharing){:target="_blank"} my CV, where you will find my contact details, should you ever need to reach me out
-- If you prefer to connect on Linkedin, here's my [profile](https://www.linkedin.com/in/paolo-riccardi-71795a85/en){:target="_blank"}
-- If you're interested in some of my opensource projects, you can checkout my [Github](https://github.com/paoloriccardi){:target="_blank"}
+My name is Paolo Riccardi and I've been a Computer Science enthusiast since childhood.
+I knew I was hooked in from the moment when, as a child, I saw for the first time the blinking, boxy cursor of my older brother's Commodore 64. 
 
+I switched from Logo and Basic to Pascal and electric guitars in High School, then I discovered Slackware and fell in love with Linux and Open Source and more broadly with Hacking as a mindset. 
 
-##### More about me
+While at University I started using regularly C and Java, which were joined over the years by Php, Objective C and Python... and by the way I've just bought a Go [handbook](https://www.oreilly.com/library/view/learning-go/9781492077206/){:target="_blank"} which is on top of my tech books backlog. 
+
+While at University I discovered distributed systems under the form of process calculus and concurrency theory. Although under a less theoretical perspective, distributed systems are still nowadays my favourite area of technical expertise.
+
+Over the years, before I knew it, my passion became my full time job.
+Now I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect for a consulting company. 
+
+##### Reach out
+
+I no longer keep my personal contact information on this page, so should you need to reach out, you can visit my Linkedin [profile](https://www.linkedin.com/in/paolo-riccardi-71795a85/en){:target="_blank"} and drop me a message or ask me my personal contacts there. 
+
+##### What else?
+
 I like to tease my brain whenever possible, I'm an avid reader expecially of History and Science books. 
 
-I currently hold a third dan black belt in Aikido and I’m a certified instructor, if you want to know more on this topic you can visit my [blog](http://www.kinonagare.it){:target="_blank"} (in italian) or my video channel on [Vimeo](https://vimeo.com/kinonagare){:target="_blank"}.
+I currently hold a third dan black belt in Aikido and I’m a certified instructor, if you want to know more on this topic you can visit my [blog](http://www.kinonagare.it){:target="_blank"} (mainly in italian) or my [video channel](https://vimeo.com/kinonagare){:target="_blank"} on Vimeo.
 
-I love cooking, hiking and taking photographs (you can see some of my shots on [Flickr](https://www.flickr.com/photos/priccardi/){:target="_blank"}).
+I love cooking, hiking and taking photographs, you can watch some of my shots on my Flickr [photo gallery](https://www.flickr.com/photos/priccardi/){:target="_blank"}.
 

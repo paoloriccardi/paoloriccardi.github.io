@@ -128,12 +128,15 @@
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   */
   
-    font-family: "Montserrat", sans-serif;
   
-  /*
-    font-family: 'Inconsolata', monospace;
-  */
+  font-family: "Montserrat", sans-serif;
   
+
+/*  
+    font-family: 'Roboto', monospace;
+  
+*/
+
   /*
     font-family: "Inconsolata", monospace;
   */
@@ -465,3 +468,9 @@
            border-right: 50px solid transparent;
            border-bottom: 100px solid red;
          }
+
+.center-image
+{
+  margin: 0 auto;
+  display: block;
+}
