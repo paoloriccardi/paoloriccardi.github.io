@@ -17,7 +17,7 @@ When my inspiration for the new project cooled off just a little bit I started t
 
 The first thing that caught my attention was the ability to host a personal website per user (plus one per project if I'm not wrong) with [GitHub Pages](https://pages.github.com/){:target="_blank"}, rather hassle free. When I say hassle free, I mean that you're not supposed to update or maintain or worry about how your website is served.
 
-I liked the idea to port my online resume, which actually is just a plain *html+css* website served by my old personal ~~server~~ VM, to GitHub Pages. Soon I realized I could do much more than this, thanks to [Jekyll](https://jekyllrb.com/){:target="_blank"} which, according to the author, is able to:
+I liked the idea to port my online resume, which was just a plain *html+css* website served by my old personal ~~server~~ VM, to GitHub Pages. Soon I realized I could do much more than this, thanks to [Jekyll](https://jekyllrb.com/){:target="_blank"} which, according to the author, is able to:
 > Transform your plain text into static websites and blogs
 
 One of the things that I missed in my previous resume was the possibility to drop in some content, articles, quick reviews about technical books I'm reading or pet projects.  
