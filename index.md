@@ -13,7 +13,7 @@ I'm Paolo Riccardi and this is my online resume.
 This website was born mainly to share my experiences in IT and my interests related to Computer Science. 
 
 Over the years I've realized that the process to translate a new concept to others is very helpful in consolidating my own understanding of that concept, so I'm trying to include this process into my study routine. 
-Writing technical articles is a time consuming activity, but hopefully over time I'll be able to add some post to the [Linenoise](/Linenoise/) section. 
+Writing technical articles is a *(very)* time consuming activity, but hopefully over time I'll be able to add some post to the [Linenoise](/Linenoise/) section. 
 
 > *The ultimate test of your knowledge is your ability to convey it to another. (Richard Feynman)*
 

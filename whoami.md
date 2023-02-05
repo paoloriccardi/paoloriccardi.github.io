@@ -12,12 +12,12 @@ I knew I was hooked in from the moment when, as a child, I saw for the first tim
 
 I switched from Logo and Basic to Pascal and electric guitars in High School, then I discovered Slackware and fell in love with Linux and Open Source and more broadly with Hacking as a mindset. 
 
-While at University I started using regularly C and Java, which were joined over the years by Php, Objective C and Python... and by the way I've just bought a Go [handbook](https://www.oreilly.com/library/view/learning-go/9781492077206/){:target="_blank"} which is on top of my tech books backlog. 
+While at University I started using regularly C and Java, which were joined over the years by Php, Objective C and Python (revived by the use of *pyspark* over the last years) and last but definitely not least, Go with a little help from the great handbook [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/){:target="_blank"}. To be honest Go wasn't love at first sight, expecially coming from a very long experience with a forgiving language such as Python but after the initial impact it has become my language of choice for my pet projects. 
 
-While at University I discovered distributed systems under the form of process calculus and concurrency theory. Although under a less theoretical perspective, distributed systems are still nowadays my favourite area of technical expertise.
+While at University I discovered distributed systems under the form of process calculus and concurrency theory. Although under a less theoretical perspective, distributed systems are still nowadays my favourite area of technical expertise, often paired with data intensive sytems.
 
 Over the years, before I knew it, my passion became my full time job.
-Now I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect for a consulting company. 
+Now I live in Tuscany (Italy), where I graduated in Computer Science (BS & MS) and where I work as Solution Architect for a consulting company focused on data mangament, data processing, data analysis and more broadly using data to bring value to enterprises. 
 
 ##### Reach out
 
