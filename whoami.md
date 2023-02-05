@@ -12,7 +12,7 @@ I knew I was hooked in from the moment when, as a child, I saw for the first tim
 
 I switched from Logo and Basic to Pascal and electric guitars in High School, then I discovered Slackware and fell in love with Linux and Open Source and more broadly with Hacking as a mindset. 
 
-While at University I started using regularly C and Java, which were joined over the years by Php, Objective C and Python (revived by the use of *pyspark* over the last years) and last but definitely not least, Go with a little help from the great handbook [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/){:target="_blank"}. To be honest Go wasn't love at first sight, expecially coming from a very long experience with a forgiving language such as Python but after the initial impact it has become my language of choice for my pet projects. 
+While at University I started using regularly C and Java, which were joined over the years by Php, Objective C and Python (revived by the use of *pyspark* over the last years) and last but definitely not least, Go with a little help from the amazing [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/){:target="_blank"}. To be honest with Go it wasn't love at first sight, expecially because I came from a very long experience with a rather forgiving language such as Python but, after the initial impact, Go has become the language of choice for my pet projects. 
 
 While at University I discovered distributed systems under the form of process calculus and concurrency theory. Although under a less theoretical perspective, distributed systems are still nowadays my favourite area of technical expertise, often paired with data intensive sytems.
 
